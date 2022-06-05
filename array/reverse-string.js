@@ -25,5 +25,19 @@ function reverseString2(str) {
     return reversed.join('');
 }
 
+// method 03
+function reverseString3(str) {
+    if (!str || str.length < 2 || typeof str !== 'string') {
+        return 'Please, give me a string';
+    }
+    return str.split('').reverse().join('');
+}
+
+// method 04
+const reverseString4 = str => str.split('').reverse().join('');
+
+// method 05
+const reverseString5 = str => [...str].reverse().join('');
+
 console.log(reverseString('sadique'));
-console.log(reverseString2('euqidas'));
+console.log(reverseString5('euqidas'));
